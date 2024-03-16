@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      p {
+        color: chartreuse;
+        border: 2px solid blue;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        background-color: black;
+        height: 250px;
+        width: 320px;
+        overflow: hidden;
+      }
+      h2 {
+        text-align: center;
+        color: blueviolet;
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Make a Palindrome Checker function</h1>
+    <p>
+      function reverse(str) { return str.split('').reverse().join(''); }function
+      isPalindrome(...strings) { strings.forEach(str => { let newStr =
+      reverse(str); if (str.toLowerCase() === newStr.toLowerCase()) {
+      console.log("${str}" is a Palindrome word.); } else { console.log("${str}"
+      is not a Palindrome word.); } }); }
+    </p>
+    <h2>Check Console</h2>
+    <script>
+      function reverse(str) {
+        return str.split("").reverse().join("");
+      }
+      function isPalindrome(...strings) {
+        strings.forEach((str) => {
+          let newStr = reverse(str);
+          if (str.toLowerCase() === newStr.toLowerCase()) {
+            console.log(`"${str}" is a Palindrome word.`);
+          } else {
+            console.log(`"${str}" is not a Palindrome word.`);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
